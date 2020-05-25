@@ -1,0 +1,857 @@
+<!-- The code below shows Homepages: 
+    *Homepage5
+    *Homepage6
+    *Homepage7
+    *Homepage8
+    *Homepage9
+The links on the sidebar have been linked to the relevant Homepages
+resulting to a single site of the whole dashboard Menu
+
+
+The respective css file is named as styleHomepage5. 
+
+Find the respective css property via the id's and classes as referenced in the stylesheet file
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width,height=device-height,initial-scale=1.0"
+    />
+    <title>Homepage5</title>
+    <link rel="stylesheet" href="styleHomepage5.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    
+    <!-- Bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+     <!-- Sidebar navigation section -->
+     <input type="checkbox" id="check" />
+     <label for="check">
+       <i class="fas fa-bars" id="btn"></i>
+       <i class="fas fa-times" id="cancel"></i>
+     </label>
+     <div class="sidebar">
+       <header>
+         <img
+           class="logo"
+           src="/images/logo.png"
+         />RESERVATION
+       </header>
+       <ul id="border">
+         <li>
+           <i class="fas fa-qrcode"></i>
+           <a href="#account" id="user-color"></i>Dashboard</a>
+         </li>
+         <li>
+           <i class="far fa-calendar-alt"></i>
+           <a href="#reservation" id="user-color">Reservations</a>
+         </li>
+         <li>
+           <i class="fas fa-calendar-alt"></i>
+           <a href="#schedule" id="user-color">Schedule</a>
+         </li>
+         <li>
+           <i class="far fa-calendar-check"></i>
+           <a href="#availability" id="user-color"></i>Availability</a>
+         </li>
+         <li>
+           <i class="far fa-list-alt"></i>
+           <a href="#customerlist" id="user-color">User list</a>
+         </li>
+         <li>
+           <i class="fas fa-stream" id="none"></i>
+           <a href="#" id="user-color">Subscription</a>
+         </li>
+         <li>
+           <i class="fas fa-stream" id="none"></i>
+           <a href="#" id="user-color">Quick Setup</a>
+         </li>
+         <li>
+           <i class="fas fa-stream"id="none"></i>
+           <a href="#" id="user-color">Site settings</a>
+         </li>
+         <li>
+           <i class="fas fa-stream"id="none"></i>
+           <a href="#" id="user-color">Resources</a>
+         </li>
+         <li>
+           <i class="fas fa-stream" id="none"></i>
+           <a href="#" id="user-color">Reports</a>
+         </li>
+         <li>
+           <i class="fas fa-stream" id="none"></i>
+           <a href="#" id="user-color">Help</a>
+         </li>
+       </ul>
+     </div>
+     <section >
+      <div class="container" id="account">
+        <ul >
+          <li><a href="#">My Account</a></li>
+        </ul>
+      </div>
+
+      <div id="vh-height"></div>
+      <!-- Overview div -->
+      <div class="container" id="overview-margin">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <p id="overview">Overview</p>
+          </div>
+          <div class="col-sm-12 col-md-1"></div>
+          <div class="col-sm-12 col-md-2">
+            
+            <div class="input-group" id="input-color">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search"
+                id="entry"
+              />
+              <div class="input-group-append" id="icon-color">
+                <span class="input-group-text"
+                  ><i class="fas fa-search"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <div class="input-group-append" id="search-btn">
+              <button class="btn btn-md btn-primary m-0 px-3" type="button">
+                <i class="fas fa-plus"></i>
+                Make Reservation
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+     <section id="section">
+       <!-- Upcoming reservation table -->
+      <div >
+        <div class=" table-responsive" id="border-table" >
+          <p id="upcoming-reservation" style="color: #000000;" >Upcoming Reservations</p>
+          <table >
+            
+            <thead>
+              <tr>
+                <th id="user-color">Reservation ID</th>
+                <th id="user-color">Slot</th>
+                <th id="user-color">User</th>
+                <th id="user-color">Time</th>
+                <th id="user-color">Status</th>
+                <th id="user-color">Created</th>
+              </tr>
+            </thead>
+    
+            <tbody id="table-border1">
+              <tr>
+                <td id="blue-text">R7243205</td>
+                <td id="grey-text">Slot 19</td>
+                <td id="blue-text">Nyongesa</td>
+                <td id="grey-text">21 May 2020 - 30 May 2020</td>
+                <td id="blue-text">Not Completed</td>
+                <td id="grey-text">05 Apr 2020 12:06</td>
+              </tr>
+              <tr>
+                <td id="blue-text">R7243205</td>
+                <td id="grey-text">Slot 19</td>
+                <td id="blue-text">Nyongesa</td>
+                <td id="grey-text">21 May 2020 - 30 May 2020</td>
+                <td id="blue-text">Reserved</td>
+                <td id="grey-text">05 Apr 2020 12:06</td>
+              </tr>
+              
+            </tbody>
+          </table>
+          <br/>
+          </div>
+        </div>
+     </section>
+     <br>
+     <br>
+     <br>
+     <section id="section">
+      <!-- Pending reservation table -->
+     <div >
+       <div class=" table-responsive" id="border-table" >
+         <p id="upcoming-reservation" style="color: #000000;">Pending reservations - Your action is required</p>
+         <table >
+           
+           <thead>
+             <tr>
+                 <th id="user-color"></th>
+                 <th id="user-color"></th>
+                 <th id="user-color"></th>
+                 <th id="user-color"></th>
+                 <th id="user-color"></th>
+                 <th id="user-color"></th>
+             </tr>
+           </thead>
+   
+           <tbody>
+             <tr>
+               <td id="blue-text"></td>
+               <td id="grey-text"></td>
+               <td id="blue-text"></td>
+               <td id="grey-text"></td>
+               <td id="blue-text"></td>
+               <td id="grey-text"></td>
+             </tr>
+             <tr>
+               <td id="blue-text"></td>
+               <td id="grey-text"></td>
+               <td id="blue-text"></td>
+               <td id="grey-text"></td>
+               <td id="blue-text"></td>
+               <td id="grey-text"></td>
+             </tr>
+             
+           </tbody>
+         </table>
+         </div>
+       </div>
+    </section>
+
+     <br>
+     <br>
+     <br>
+     <section id="section">
+      <!-- Latest reservation table -->
+     <div >
+       <div class=" table-responsive" id="border-table" >
+         <p id="upcoming-reservation" style="color: #000000;" >Latest reservations entered</p>
+         <table >
+           
+           <thead>
+             <tr>
+              <th id="user-color">Reservation ID</th>
+              <th id="user-color">Slot</th>
+              <th id="user-color">User</th>
+              <th id="user-color">Time</th>
+              <th id="user-color">Status</th>
+              <th id="user-color">Created</th>
+             </tr>
+           </thead>
+   
+           <tbody id="table-border1">
+             <tr>
+               <td id="blue-text">R7243205</td>
+               <td id="grey-text">Slot 19</td>
+               <td id="blue-text">Nyongesa</td>
+               <td id="grey-text">21 May 2020 - 30 May 2020</td>
+               <td id="blue-text">Not Completed</td>
+               <td id="grey-text">05 Apr 2020 12:06</td>
+             </tr>
+             <tr>
+               <td id="blue-text">R7243205</td>
+               <td id="grey-text">Slot 19</td>
+               <td id="blue-text">Nyongesa</td>
+               <td id="grey-text">21 May 2020 - 30 May 2020</td>
+               <td id="blue-text">Not Completed</td>
+               <td id="grey-text">05 Apr 2020 12:06</td>
+             </tr>
+           </tbody>
+         </table>
+         <br/>
+         </div>
+       </div>
+    </section>
+    <br/>
+    <!-- edit submit button -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-10 "></div>
+        
+        
+        
+        <div class="col-sm-4 col-md-2" id="edit-button">
+          <button class="btn btn-md btn-primary m-0 " type="button">
+           Edit
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="vh-height"></div>
+    <!-- Reservations div -->
+    <div id="reservation">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    </div>
+    <div class="container" id="overview-margin">
+      <div class="row" >
+        <div class="col-sm-12 col-md-6">
+          <p id="overview" >Reservations</p>
+        </div>
+        <div class="col-sm-12 col-md-1"></div>
+        <div class="col-sm-12 col-md-2">
+          
+          <div class="input-group" id="input-color">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search"
+              id="entry"
+            />
+            <div class="input-group-append" id="icon-color">
+              <span class="input-group-text"
+                ><i class="fas fa-search"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="input-group-append" id="search-btn">
+            <button class="btn btn-md btn-primary m-0 px-3" type="button">
+              <i class="fas fa-plus"></i>
+              Make Reservation
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="section">
+      <!-- Upcoming reservation table -->
+     <div >
+       <div class=" table-responsive" id="border-table" >
+         <p id="upcoming-reservation" style="color: #000000;" >Upcoming Reservations</p>
+         <table >
+           
+           <thead>
+             <tr>
+                 <th id="user-color">Reservation ID</th>
+                 <th id="user-color">Slot</th>
+                 <th id="user-color">User</th>
+                 <th id="user-color">Time</th>
+                 <th id="user-color">Status</th>
+                 <th id="user-color">Created</th>
+             </tr>
+           </thead>
+   
+           <tbody id="table-border1">
+             <tr>
+               <td id="blue-text">R7243205</td>
+               <td id="grey-text">Slot 19</td>
+               <td id="blue-text">Nyongesa</td>
+               <td id="grey-text">21 May 2020 - 30 May 2020</td>
+               <td id="blue-text">Not Completed</td>
+               <td id="grey-text">05 Apr 2020 12:06</td>
+             </tr>
+             <tr>
+               <td id="blue-text">R7243205</td>
+               <td id="grey-text">Slot 19</td>
+               <td id="blue-text">Nyongesa</td>
+               <td id="grey-text">21 May 2020 - 30 May 2020</td>
+               <td id="blue-text">Reserved</td>
+               <td id="grey-text">05 Apr 2020 12:06</td>
+             </tr>
+             
+           </tbody>
+         </table>
+         <br/>
+         </div>
+       </div>
+    </section>
+    &nbsp;
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-sm-8"> 
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="row">
+            <a href="#" class="transparent btn-small" id="previous-text"
+              >Previous</a
+            >
+            <a href="#" class="transparent btn-small" id="next-text">Next</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="vh-height"></div>
+    <!-- Schedule div -->
+    <div id="schedule">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    </div>
+    <div class="container" id="overview-margin">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <p id="overview" >Schedule</p>
+        </div>
+        <div class="col-sm-12 col-md-2" id="input-color">
+          <select class=" mb-3"> 
+            <option selected>All Resources</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-sm-12 col-md-1"></div>
+        <div class="col-sm-12 col-md-2">
+          
+          <div class="input-group" id="input-color">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search"
+              id="entry"
+            />
+            <div class="input-group-append" id="icon-color">
+              <span class="input-group-text"
+                ><i class="fas fa-search"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="input-group-append" id="search-btn">
+            <button class="btn btn-md btn-primary m-0 px-3" type="button">
+              <i class="fas fa-plus"></i>
+              Make Reservation
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="section">
+      <!-- Schedule table -->
+     <div >
+       <div class=" table-responsive" id="border-table1" >
+         <p id="upcoming-reservation" style="color: #000000;">April 05</p>
+         <table >
+            
+          <thead>
+            <tr>
+                <th id="cell-padding1">6h</th>
+                <th id="cell-padding1">7h</th>
+                <th id="cell-padding1">8h</th>
+                <th id="cell-padding1">9h</th>
+                <th id="cell-padding1">10h</th>
+                <th id="cell-padding1">11h</th>
+                <th id="cell-padding1">12h</th>
+                <th id="cell-padding1">13h</th>
+                <th id="cell-padding1">14h</th>
+                <th id="cell-padding1">15h</th>
+                <th id="cell-padding1">15h</th>
+                <th id="cell-padding1">16h</th>
+            </tr>
+          </thead>
+  
+          <tbody id="table-border">
+            <tr id="space-color"
+            ">
+              <td id="cell-padding"></td>
+              <td id="cell-padding"></td>
+              <td id="cell-padding"></td>
+              <td id="cell-padding"></td>
+              <td id="cell-padding"></td>
+              <td id="cell-padding"></td>
+              <td id="cell-padding"></td>
+              <td id="cell-padding"></td>
+              <td id="cell-padding"></td>
+              <td id="cell-padding"></td>
+              <td id="cell-padding"></td>
+              <td id="cell-padding"></td>
+            </tr>
+          </tbody>
+
+          <thead>
+            <tr>
+              <th id="cell-padding1">6h</th>
+              <th id="cell-padding1">7h</th>
+              <th id="cell-padding1">8h</th>
+              <th id="cell-padding1">9h</th>
+              <th id="cell-padding1">10h</th>
+              <th id="cell-padding1">11h</th>
+              <th id="cell-padding1">12h</th>
+              <th id="cell-padding1">13h</th>
+              <th id="cell-padding1">14h</th>
+              <th id="cell-padding1">15h</th>
+              <th id="cell-padding1">15h</th>
+              <th id="cell-padding1">16h</th>
+            </tr>
+          </thead>
+
+          <tbody id="table-border">
+            <tr id="space-color"
+            ">
+            <td id="cell-padding"></td>
+            <td id="cell-padding"></td>
+            <td id="cell-padding"></td>
+            <td id="cell-padding"></td>
+            <td id="cell-padding"></td>
+            <td id="cell-padding"></td>
+            <td id="cell-padding"></td>
+            <td id="cell-padding"></td>
+            <td id="cell-padding"></td>
+            <td id="cell-padding"></td>
+            <td id="cell-padding"></td>
+            <td id="cell-padding"></td>
+            </tr>
+          </tbody>
+        </table>
+        <br/>
+         </div>
+       </div>
+    </section>
+    &nbsp;
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-sm-8"> 
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="row">
+            <a href="#" class="transparent btn-small" id="previous-text"
+              >Previous</a
+            >
+            <a href="#" class="transparent btn-small" id="next-text">Next</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="vh-height"></div>
+    <!-- Availability div -->
+    <div id="availability">
+      <br/>
+      <br/>
+      <br/>
+    </div>
+    <div class="container" id="overview-margin">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <p id="overview">Availability</p>
+        </div>
+        <div class="col-sm-12 col-md-2" id="input-color">
+          <select class=" mb-3"> 
+            <option selected>All Resources</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-sm-12 col-md-1"></div>
+        <div class="col-sm-12 col-md-2">
+          
+          <div class="input-group" id="input-color">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search"
+              id="entry"
+            />
+            <div class="input-group-append" id="icon-color">
+              <span class="input-group-text"
+                ><i class="fas fa-search"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="input-group-append" id="search-btn">
+            <button class="btn btn-md btn-primary m-0 px-3" type="button">
+              <i class="fas fa-plus"></i>
+              Make Reservation
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="section">
+      <!-- Availability table -->
+     <div >
+       <div class=" table-responsive" id="border-table1" >
+         <p id="upcoming-reservation" style="color: #000000;" >April 05</p>
+         <table >
+           
+          <thead>
+            <tr>
+              <th id="user-color">Slot 21</th>
+              <th id="user-color">Slot 21</th>
+              <th id="user-color">Slot 21</th>
+              <th id="user-color">Slot 21</th>
+              <th id="user-color">Slot 21</th>
+              <th id="user-color">Slot 21</th>
+              <th id="user-color">Slot 21</th>
+              <th id="user-color">Slot 21</th>
+              <th id="user-color">Slot 21</th>
+              <th id="user-color">Slot 21</th>
+              <th id="user-color">Slot 21</th>
+              <th id="user-color">Slot 21</th>
+              <th id="user-color">Slot 21</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+            <td id="blue-text">Available</td>
+            <td id="blue-text">Available</td>
+            <td id="blue-text">Available</td>
+            <td id="blue-text">Available</td>
+            <td id="blue-text">Available</td>
+            <td id="blue-text">Available</td>
+            <td id="blue-text">Available</td>
+            <td id="blue-text">Available</td>
+            <td id="blue-text">Available</td>
+            <td id="blue-text">Available</td>
+            <td id="blue-text">Available</td>
+            <td id="blue-text">Available</td>
+            <td id="blue-text">Available</td>
+            </tr>
+          </tbody>
+
+
+          <thead>
+           <tr>
+            <th id="user-color">Slot 21</th>
+            <th id="user-color">Slot 21</th>
+            <th id="user-color">Slot 21</th>
+            <th id="user-color">Slot 21</th>
+            <th id="user-color">Slot 21</th>
+            <th id="user-color">Slot 21</th>
+            <th id="user-color">Slot 21</th>
+            <th id="user-color">Slot 21</th>
+            <th id="user-color">Slot 21</th>
+            <th id="user-color">Slot 21</th>
+            <th id="user-color">Slot 21</th>
+            <th id="user-color">Slot 21</th>
+            <th id="user-color">Slot 21</th>
+              
+           </tr>
+         </thead>
+ 
+         <tbody>
+           <tr id="tr-spacing">
+           <td id="blue-text">Available</td>
+           <td id="blue-text">Available</td>
+           <td id="blue-text">Available</td>
+           <td id="blue-text">Available</td>
+           <td id="blue-text">Available</td>
+           <td id="blue-text">Available</td>
+           <td id="blue-text">Available</td>
+           <td id="blue-text">Available</td>
+           <td id="blue-text">Available</td>
+           <td id="blue-text">Available</td>
+           <td id="blue-text">Available</td>
+           <td id="blue-text">Available</td>
+           <td id="blue-text">Available</td>
+           </tr>
+         </tbody>
+
+
+         <thead>
+           <tr>
+               <th id="user-color">Slot 21</th>
+               <th id="user-color">Slot 21</th>
+               <th id="user-color">Slot 21</th>
+               <th id="user-color">Slot 21</th>
+               <th id="user-color">Slot 21</th>
+               <th id="user-color">Slot 21</th>
+               <th id="user-color">Slot 21</th>
+               <th id="user-color">Slot 21</th>
+               <th id="user-color">Slot 21</th>
+               <th id="user-color">Slot 21</th>
+               <th id="user-color">Slot 21</th>
+               <th id="user-color">Slot 21</th>
+               <th id="user-color">Slot 21</th>
+              
+           </tr>
+         </thead>
+ 
+         <tbody>
+           <tr>
+             <td id="blue-text">Available</td>
+             <td id="blue-text">Available</td>
+             <td id="blue-text">Available</td>
+             <td id="blue-text">Available</td>
+             <td id="blue-text">Available</td>
+             <td id="blue-text">Available</td>
+             <td id="blue-text">Available</td>
+             <td id="blue-text">Available</td>
+             <td id="blue-text">Available</td>
+             <td id="blue-text">Available</td>
+             <td id="blue-text">Available</td>
+             <td id="blue-text">Available</td>
+             <td id="blue-text">Available</td>
+           </tr>
+         </tbody>
+
+        </table>
+        <br/>
+         </div>
+       </div>
+    </section>
+    &nbsp;
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-sm-8"> 
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="row">
+            <a href="#" class="transparent btn-small" id="previous-text"
+              >Previous</a
+            >
+            <a href="#" class="transparent btn-small" id="next-text">Next</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="vh-height"></div>
+    <!-- User list div -->
+    <div id="customerlist">
+      <br/>
+    </div>
+    <div class="container" id="overview-margin">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <p id="overview">User list</p>
+        </div>
+        <div class="col-sm-12 col-md-2" id="input-user">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Find User" aria-label="Text input with dropdown button">
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-1"></div>
+        <div class="col-sm-12 col-md-2">
+          
+          <div class="input-group" id="input-color">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search"
+              id="entry"
+            />
+            <div class="input-group-append" id="icon-color">
+              <span class="input-group-text"
+                ><i class="fas fa-search"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="input-group-append" id="search-btn">
+            <button class="btn btn-md btn-primary m-0 px-3" type="button">
+              <i class="fas fa-plus"></i>
+              Make Reservation
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="section">
+      <!-- User list div -->
+     <div >
+       <div class=" table-responsive" id="border-table" >
+         <p id="upcoming-reservation" ></p>
+         <table >
+           
+           <thead>
+             <tr>
+                 <th id="user-color">User ID</th>
+                 <th id="user-color">Name</th>
+                 <th id="user-color">Email</th>
+                 <th id="user-color">Latest Reservation</th>
+                 <th id="user-color">Status</th>
+                 <th id="user-color">Created</th>
+             </tr>
+           </thead>
+   
+           <tbody id="table-border1">
+             <tr>
+               <td id="blue-text">R7243205</td>
+               <td id="grey-text">Slot 19</td>
+               <td id="blue-text">Nyongesa</td>
+               <td id="grey-text">21 May 2020 - 30 May 2020</td>
+               <td id="blue-text">Not Completed</td>
+               <td id="grey-text">05 Apr 2020 12:06</td>
+             </tr>
+             <tr>
+               <td id="blue-text">R7243205</td>
+               <td id="grey-text">Slot 19</td>
+               <td id="blue-text">Nyongesa</td>
+               <td id="grey-text">21 May 2020 - 30 May 2020</td>
+               <td id="blue-text">Reserved</td>
+               <td id="grey-text">05 Apr 2020 12:06</td>
+             </tr>
+             
+           </tbody>
+         </table>
+         <br/>
+         </div>
+       </div>
+    </section>
+    &nbsp;
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-sm-8"> 
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="row">
+            <a href="#" class="transparent btn-small" id="previous-text"
+              >Previous</a
+            >
+            <a href="#" class="transparent btn-small" id="next-text">Next</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="vh-height"></div>
+
+
+
+
+
+   
+ 
+     <script
+     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+     crossorigin="anonymous"
+   ></script>
+   <script
+     src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+     crossorigin="anonymous"
+   ></script>
+   <script
+     src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+     crossorigin="anonymous"
+   ></script>
+    
+</body>
+</html>

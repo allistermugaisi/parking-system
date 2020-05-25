@@ -1,0 +1,255 @@
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url("/surface/Assets/css/fonts/all/normal/segoeui.eot");
+  src: url("/surface/Assets/css/fonts/all/normal/segoeui.eot?#iefix")
+      format("embedded-opentype"),
+    url("/surface/Assets/css/fonts/all/normal/segoeui.woff") format("woff"),
+    url("/surface/Assets/css/fonts/all/normal/segoeui.svg#SegoeUI")
+      format("svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.logo {
+  position: relative;
+  top: 30px;
+  float: left;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.sidebar {
+  margin-top: -25px;
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #d5d4d4;
+  transition: all 0.5s ease;
+}
+.sidebar header {
+  padding: 0 1.5em;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  line-height: 120px;
+  background: #d5d4d4;
+  user-select: none;
+}
+.sidebar ul a {
+  /* position: relative; */
+  /* display: inline-block; */
+  /* flex-direction: column;
+    align-items: center; */
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000000;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.4s;
+}
+#border ul li:hover a {
+  padding-left: 50px;
+  padding: 20px;
+}
+.sidebar ul li:hover {
+  background-color: #ffffff;
+  border-right: 6px solid blue;
+}
+.sidebar i {
+  margin-left: 20px;
+}
+
+/* .sidebar ul a i {
+    margin-right: 16px;
+  } */
+#none {
+  color: transparent;
+}
+#check {
+  display: none;
+}
+label #btn,
+label #cancel {
+  position: absolute;
+  cursor: pointer;
+  background: #042331;
+  border-radius: 3px;
+}
+label #btn {
+  position: fixed;
+  left: 70px;
+  top: 20px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all 0.5s;
+}
+label #cancel {
+  position: fixed;
+  z-index: 1111;
+  left: -195px;
+  top: 10px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all 0.5s ease;
+}
+#check:checked ~ .sidebar {
+  left: 0;
+}
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel {
+  left: 195px;
+}
+/* #check:checked ~ #section {
+  margin-left: 50px;
+} */
+#section {
+  transition: all 0.5s ease;
+}
+#account {
+  margin-top: -40px;
+  position: static;
+}
+#account ul li {
+  float: right;
+  background-color: #2680eb;
+  padding: 20px;
+  padding-top: 40px;
+}
+#account ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+#overview {
+  font-weight: lighter;
+  color: #2680eb;
+  font-size: 30px;
+}
+#icon-color span {
+  background-color: #50c878;
+}
+#icon-color i {
+  color: #ffffff;
+}
+#input-color input {
+  background-color: #efefef;
+}
+#input-color select {
+  background-color: #ffffff;
+  padding: 0.375rem 1rem;
+  color: #8b8a8a;
+  line-height: 1.5;
+  align-items: center;
+  font-size: 1rem;
+  height: calc(1.5em + 0.75rem + 2px);
+  font-weight: 400;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding-right: 3rem;
+}
+#input-user {
+  background-color: #ffffff;
+}
+#search-btn button {
+  background-color: #50c878;
+  border: none;
+}
+#search-btn button i {
+  font-size: 10px;
+}
+#vh-height {
+  min-height: 150px;
+}
+#overview-margin {
+  margin-left: 235px;
+  padding: 0 5.5em;
+}
+#upcoming-reservation {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+table th,
+table td {
+  padding: 10px;
+  /* Apply cell padding */
+}
+#cell-padding {
+  padding: 20px;
+}
+#cell-padding1 {
+  padding: 20px;
+  color: #4e4e4e;
+}
+#blue-text {
+  color: #2680eb;
+}
+#grey-text {
+  color: #8b8a8a;
+}
+#user-color {
+  color: #4e4e4e;
+}
+#border-table {
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 0 3.5em;
+  margin-left: 200px;
+  margin-right: 100px;
+}
+#table-border tr td {
+  border: 1px solid #ffffff;
+}
+#table-border1 tr {
+  border: 1px solid #d5d4d4;
+  border-left: #ffffff;
+  border-right: #ffffff;
+}
+#section div {
+  margin-right: 280px;
+  margin-left: 160px;
+}
+#edit-button button {
+  float: right;
+  padding-left: 2rem;
+  padding-right: 3rem;
+}
+#previous-text {
+  color: #9ccbff;
+  text-transform: capitalize;
+  padding: 0 1.5em;
+  text-decoration: none;
+}
+#next-text {
+  text-transform: capitalize;
+  padding: 0 0.5em;
+  text-decoration: none;
+}
+#space-color {
+  background-color: #e8f2fd;
+}
+#border-table1 {
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 0 5em;
+  margin-left: 200px;
+  margin-right: 100px;
+}

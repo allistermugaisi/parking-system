@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Segoe UI";
+  src: url("/surface/Assets/css/fonts/all/normal/segoeui.eot");
+  src: url("/surface/Assets/css/fonts/all/normal/segoeui.eot?#iefix")
+      format("embedded-opentype"),
+    url("/surface/Assets/css/fonts/all/normal/segoeui.woff") format("woff"),
+    url("/surface/Assets/css/fonts/all/normal/segoeui.svg#SegoeUI")
+      format("svg");
+}
+body {
+  margin: 0px;
+}
+
+@media (min-width: 567px) {
+  .abs-center-x {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+#bg-dark {
+  background-color: #000000;
+}
+#padding {
+  padding-top: 25px;
+  background: #2680eb;
+}
+#brandname {
+  padding: 0 1em;
+}
+.nav-link {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+}
+.nav-link:hover {
+  background-color: #2680eb;
+  padding: 0.5rem 1rem;
+}
+#border {
+  border-left: 6px solid #2680eb;
+  padding: 0 1.5em;
+}
+#register {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse; /* Remove cell spacing */
+}
+table th,
+table td {
+  padding: 20px; /* Apply cell padding */
+}
+table th {
+  background-color: #2680eb;
+}
+#table-border tr td {
+  border: 1px solid #ffffff;
+}
+#grey-color {
+  background-color: #efefef;
+}
+#below-btn {
+  background-color: #e8f2fd;
+}
+#below1-btn {
+  background-color: #f1e2d4;
+}
+#search-btn button {
+  color: #2680eb;
+  background-color: #e8f2fd;
+  border: none;
+}
+#search-btn1 button {
+  color: #f58e2e;
+  background-color: #f1e2d4;
+  border: none;
+}
+#previous-text {
+  color: #9ccbff;
+  text-transform: capitalize;
+  padding: 0 1.5em;
+  text-decoration: none;
+}
+#next-text {
+  text-transform: capitalize;
+  padding: 0 0.5em;
+  text-decoration: none;
+}
+#space {
+  justify-content: center;
+  background-color: #000000;
+  padding-top: 10px;
+  height: 40px;
+}
+#space a {
+  height: 40px;
+  padding: 0 1.5em;
+  justify-content: space-evenly;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}

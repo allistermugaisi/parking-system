@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Segoe UI";
+  src: url("/surface/Assets/css/fonts/all/normal/segoeui.eot");
+  src: url("/surface/Assets/css/fonts/all/normal/segoeui.eot?#iefix")
+      format("embedded-opentype"),
+    url("/surface/Assets/css/fonts/all/normal/segoeui.woff") format("woff"),
+    url("/surface/Assets/css/fonts/all/normal/segoeui.svg#SegoeUI")
+      format("svg");
+}
+body {
+  margin: 0px;
+}
+
+@media (min-width: 567px) {
+  .abs-center-x {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+#bg-dark {
+  background-color: #000000;
+}
+#padding {
+  padding-top: 25px;
+  background: #2680eb;
+}
+#brandname {
+  padding: 0 1em;
+}
+.nav-link {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+}
+.nav-link:hover {
+  background-color: #2680eb;
+  padding: 0.5rem 1rem;
+}
+#border {
+  border-left: 6px solid #2680eb;
+  padding: 0 1.5em;
+}
+#register {
+  font-weight: bold;
+  font-size: 25px;
+}
+#register a {
+  font-size: 25px;
+  padding: 0 1.5em;
+  color: #d3e6fb;
+  font-weight: bold;
+  cursor: pointer;
+}
+#input-color input {
+  background-color: #efefef;
+}
+#search-btn button {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+#space {
+  justify-content: center;
+  background-color: #000000;
+  padding-top: 10px;
+  height: 40px;
+}
+#space a {
+  height: 40px;
+  padding: 0 1.5em;
+  justify-content: space-evenly;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
