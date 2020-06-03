@@ -193,7 +193,7 @@ label #cancel {
 }
 #overview-margin {
   padding: 0 4em;
-  padding-right: 5px;
+  padding-right: 2.5em;
 }
 #upcoming-reservation {
   font-size: 20px;
@@ -202,7 +202,7 @@ label #cancel {
 }
 table th,
 table td {
-  padding: 10px;
+  padding: 9px;
   /* Apply cell padding */
 }
 #cell-padding {
