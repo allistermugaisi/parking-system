@@ -22,7 +22,8 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-
+    <!-- Datetimepicker minified css -->
+    <link rel="stylesheet" href="jquery.datetimepicker.min.css" />
     <style>
       header {
         background-image: url("/images/background.png");
@@ -96,17 +97,17 @@
             <label for="entry" style="padding-left: 15px;"
               >Entry date & time</label
             >
-            <div class="input-group">
+            <div class="input-group" id="datetimepicker">
               <input
                 type="text"
                 placeholder="26.03.2020  12:38"
+                id="picker"
                 class="form-control"
-                style="padding-right: 5px; padding-left: 3px;"
               />
-              <div class="input-group-append" id="icon-color">
-                <span class="input-group-text"
-                  ><i class="fas fa-calendar-alt"></i
-                ></span>
+              <div class="input-group-prepend">
+                <button type="button" id="toggle" class="input-group-text">
+                  <i class="fas fa-calendar-alt"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -115,18 +116,17 @@
             <label for="exit" style="padding-left: 15px;"
               >Exit date & time</label
             >
-            <div class="input-group">
+            <div class="input-group" id="datetimepicker">
               <input
                 type="text"
                 placeholder="26.03.2020  12:38"
+                id="picker2"
                 class="form-control"
-                style="padding-right: 5px; padding-left: 3px;"
-                id="exit"
               />
-              <div class="input-group-append" id="icon-color">
-                <span class="input-group-text"
-                  ><i class="fas fa-calendar-alt"></i
-                ></span>
+              <div class="input-group-prepend">
+                <button type="button" id="toggle2" class="input-group-text">
+                  <i class="fas fa-calendar-alt"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -374,5 +374,36 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="jquery.datetimepicker.full.min.js"></script>
+    <script>
+      $("#picker").datetimepicker({
+        timepicker: true,
+        datepicker: true,
+        format: "d.m.Y H:i",
+        step: 5,
+        onShow: function (ct) {
+          this.setOptions({
+            maxDate: $("#picker2").val() ? $("#picker2").val() : false,
+          });
+        },
+      });
+      $("#toggle").on("click", function () {
+        $("#picker").datetimepicker("toggle");
+      });
+      $("#picker2").datetimepicker({
+        timepicker: true,
+        datepicker: true,
+        format: "d.m.Y H:i",
+        step: 5,
+        onShow: function (ct) {
+          this.setOptions({
+            minDate: $("#picker").val() ? $("#picker").val() : false,
+          });
+        },
+      });
+      $("#toggle2").on("click", function () {
+        $("#picker2").datetimepicker("toggle");
+      });
+    </script>
   </body>
 </html>

@@ -9,6 +9,7 @@
 }
 body {
   margin: 0px;
+  overflow-x: hidden;
 }
 
 @media (min-width: 567px) {
@@ -39,7 +40,7 @@ body {
   padding: 0.5rem 1rem;
 }
 #border {
-  border-left: 6px solid #2680eb;
+  border-left: 4px solid #2680eb;
   padding: 0 1.5em;
 }
 #register {

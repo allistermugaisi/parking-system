@@ -125,7 +125,7 @@ label #cancel {
   left: 195px;
 }
 #check:checked ~ #body {
-  margin-left: 250px;
+  margin-left: 16em;
 }
 #body {
   transition: all 0.5s ease;
@@ -193,7 +193,7 @@ label #cancel {
 }
 #overview-margin {
   padding: 0 4em;
-  padding-right: 2.5em;
+  padding-inline-end: 0.75em;
 }
 #upcoming-reservation {
   font-size: 20px;
